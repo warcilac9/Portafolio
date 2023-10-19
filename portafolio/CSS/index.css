@@ -1,0 +1,12 @@
+.navbar img{
+    width: 4rem;
+    height: 4rem;
+}
+.card-body{
+    text-align: justify;
+    text-justify: inter-word;  
+}
+.inicio img{
+    width: auto;
+    height: 40rem;
+}
