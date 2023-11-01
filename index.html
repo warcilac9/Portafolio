@@ -4,99 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="./CSS/bootstrap-icons/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./AOS/aos.css">
     <link rel="stylesheet" href="./CSS/index.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./img/WalasLogo.jpg" class="img-fluid text-center" alt="Logo">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+      <nav class="navbar fixed-top bg-secondary" >
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="img/Logo2.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Contents</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-        </nav>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#indice2">About me</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#indice3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Proyects
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Persona 5: Persona Calculator</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">My Games</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#indice4">Contact Info</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <!--Inicio-->
-        <section class="inicio py-5" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12"><img src="./img/IMG-20231018-WA0003.jpeg" class="img-fluid text-center py-5 px-5" alt="Yo"></div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam harum temporibus porro iusto doloribus totam, ad accusamus molestiae quaerat. Libero quibusdam quasi illum sint nulla repudiandae magni quam delectus veniam.</div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+       <!--Inicio-->
+       <section id="indice1" class="inicio" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12"><img src="./img/Fotoportada.webp" id="FotoPerfil" class="container img-fluid " alt="Yo"></div>
+                <div id="iniciotext" class=" container col-md-6 col-sm-12 "> 
+                  I am curently studying Software development in Universidad Amerike, currently I am studying web development using JavaScript, HTML an CSS. I am also studying videogame development in Unity Engine using c#.
                 </div>
             </div>
-        </section>
-        <!--/Inicio-->
+        </div>
+    </section>
+    <br>
+    <br>
+    <!--/Inicio-->
+      <!--Caroussel-->
+      <div id="carouselExampleAutoplaying" class=" container carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/code.jpg" class="d-block w-100" alt="code">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Game-Development.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/languages.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <br>
+      <!--/Caroussel-->
         <!--Acerca-->
-        <section class="acerca py-5">
+        <section  class="acerca">
             <div class="container">
-                <h2 class="text-center py-5">Acerca De Mi</h2>
+                <h2 id="indice2" class="text-center">About me </h2>
                 <div class="row py-5">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div id="iniciotext" class="col-lg-6 col-md-6 col-sm-12 px-5">
                         <p>
-                            Soy un estudiante de Desarrollo de Software Interactivo y Videojuegos en la Universidad Amerike, actualmente estoy estudiando como desarrollar sitios web con HTML, JS y CSS.
+                           My name is Wilbert Arcila, I'm currently 20 years old and I'm living in Mexico. I've been studying how to be a game developer and a developer in general since 2022. my knowledge in development is limited, but I am committed to learn a lot of new stuff.  
                         </p>
+                        <p>
+                          My journey is short, but I believe I have a great journey ahead! See you soon!
+                        </p>
+                        <br>
+                    <br>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12"><img src="#" class="img-fluid text-center" alt="Acerca"></div>
+                    
+                    <div class="col-lg-6 col-md-6 col-sm-12"><img src="/img/IMG_20220119_082132_699.webp" id="FotoPerfil" class="img-fluid text-center" alt="Acerca"></div>
                 </div>
             </div>
         </section>
+        <br>
+        <br>
         <!--/Acerca-->
         <!--Proyectos-->
-        <section class="proyectos py-5 px-3">
+        <section  class="proyectos ">
           <div class="container">
-              <h2 class="text-center py-5">Mis Proyectos</h2>
-              <div class="row py-5">
-                <div class="card" style="width: 18rem;">
+              <h2 id="indice3" class="text-center ">Mis Proyectos</h2>
+              <br>
+        <br>
+              <div class="row ">
+                <div class="card col-lg-6 col-md-6 col-sm-12 px-5"   style="width: 18rem;">
                   <img src="..." class="card-img-top" alt="Persona Calculator">
                   <div class="card-body">
                     <h5 class="card-title text-center">Persona 5 Royal Fusion Calculator</h5>
-                    <p class="card-text ">Una calculadora de Personas para hacer más eficaz tú partida de Persona 5 Royale.</p>
-                    <a href="./DOCS/Empathy Map.pdf" class="btn btn-primary">Ver Proyecto</a>
+                    <p class="card-text ">A Persona calculator to make your next persona 5 game easier!</p>
+                    <a href="./DOCS/Empathy_Map_1.pdf" class="btn btn-primary">See Proyect</a>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="card col-lg-6 col-md-6 col-sm-12 px-5 "  style="width: 18rem;">
+                  <img src="img/itch.webp" class="card-img-top " alt="Persona Calculator">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Games made by me</h5>
+                    <p class="card-text ">See all my games in my Itch.io page!</p>
+                    <a href="https://warcilac9.itch.io/" target="_blank" class="btn btn-primary">See Itch.io</a>
                   </div>
                 </div>
               </div>
           </div>
         </section>
+        
         <!--/Proyectos-->
+        <!--Contact-->
+        <section class="contact">
+          <div  class="container">
+            <h2 id="indice4" class="text-center">Contact me!!</h2>
+            <div >
+              <table id="iniciotextS" class="table table-hover table-dark text-center centrao">
+                <thead>
+                  <tr class="container">
+                    <th scope="col">Follow me here:</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="col">Instagram</th>
+                    <th><a href="https://www.instagram.com/warcilac/">warcilac</a></th>
+                  </tr>
+                  <tr>
+                    <th scope="col">Mail</th>
+                    <th>warcilac9@gmail.com</th>
+                  </tr>
+                 <tr>
+                  <th scope="col">Linkedin</th>
+                  <th><a href="https://www.linkedin.com/in/wili-arcila-c-1a38a3297/">Wilbert Arcila Castellanos</a></th>
+                 </tr>
+                 <tr>
+                  <th scope="col">Itch.io</th>
+                  <th><a href="https://warcilac9.itch.io/">warcilac9</a></th>
+                 </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <!--/Contact-->
     </main>
     <footer></footer>
     <script src="./JS/jquery-3.7.0.min.js"></script>
-    <script src="./JS/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./JS/myscript.js"></script>
 </body>
 </html>

@@ -1,3 +1,9 @@
+main{
+    background-color: #494f54;
+}
+.navbar{
+    background-color: #404040;
+}
 .navbar img{
     width: 4rem;
     height: 4rem;
@@ -9,4 +15,40 @@
 .inicio img{
     width: auto;
     height: 40rem;
+}
+#FotoPerfil{
+  border-radius: 40rem;  
+  height: 60%;
+  margin-left: 5rem;
+  margin-right: auto;
+  background: #1a1a1a;
+}
+#iniciotext{
+ font-size: 2rem;
+ color: white;
+ margin-left: auto;
+ margin-right: auto;
+}
+h2{
+    font-size: 5rem;
+}
+#Foto1{
+    margin-left: auto;
+    margin-right: auto;
+}
+#inicio{
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo{
+    height: 8rem;
+    width: auto;
+}
+#tabla{
+    background-color: #494f54;
+}
+.centrao{
+    margin-left: auto;
+    margin-right: auto;
 }
